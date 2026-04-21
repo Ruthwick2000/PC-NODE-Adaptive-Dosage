@@ -26,3 +26,42 @@ versus the standard 30 mg — a 67% reduction preventing drug toxicity.
 ---
 
 ## Repository Structure
+
+---
+
+## Key Results
+
+| Metric | RAG-PCNODE | Trans-PK 2026 (extreme) | Classical PK |
+|--------|-----------|--------------------------|--------------|
+| R²     | 0.9816    | 0.741 ↓                  | 0.871        |
+| RMSE   | 3.61 mg/L | 8.90 mg/L ↑              | 8.40 mg/L    |
+| Mass-balance violation | <0.1% | 14.8% | 0% |
+| Environmental adaptation | Yes | No | No |
+| Bayesian CI | Yes | No | No |
+
+---
+
+## How to Run
+
+### Julia (v4 — recommended)
+```julia
+# Open julia_notebook/pc_node_v4_notebook.jl in Jupyter
+# Run cells in order: Cell 1 → Cell 13
+```
+
+### Python (v3)
+```bash
+conda activate pcnode
+cd python_code
+python pc_node_adaptive_dosage.py
+```
+
+---
+
+## Citations
+
+- Zhu et al. (2022). CYP3A4 altitude suppression. *Pharmaceuticals*
+- ICMR (2024). Heat stress renal injury. *ICMR Technical Report*
+- Gupta & Sharma (2026). Trans-PK. *IEEE Trans. Biomed. Eng.*
+- Daglarli (2026). XAI-RAG dosage. *IEEE Access*
+EOF
